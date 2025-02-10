@@ -1,0 +1,5 @@
+#Imprime los países integrantes de la CONMEBOL
+
+países = ["Argentina", "Bolivia", "Brasil", "Chile", "Colombia", "Ecuador", "Paraguay", "Perú", "Uruguay", "Venezuela"] #Lista de países
+for país in países:
+    print(país) #Imprimirá cada país dentro de la lista "países"
