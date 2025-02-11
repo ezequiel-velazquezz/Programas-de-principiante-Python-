@@ -1,0 +1,8 @@
+#Contador del 1 al 10 usando while
+##Contator from 1 to 10 using while
+
+números=list(range(1, 11))
+índice=0
+while índice < len(números):
+    print(números[índice])
+    índice+=1
