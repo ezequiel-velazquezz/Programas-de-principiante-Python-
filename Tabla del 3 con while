@@ -1,0 +1,5 @@
+#Tabla del tres
+tab=3
+while tab<=30:
+    print(tab)
+    tab+=3
