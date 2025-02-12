@@ -1,0 +1,22 @@
+#Programa para restar y multiplicar dos números con manejo de errores
+#Program to subtract and multiply two numbers with error handling
+while True:
+    try:
+        num1=int(input("Ingresa u número: "))
+        num2=int(input("Ingresa otro número: "))
+        print("Elige entre estas opciones:")
+        print("1- Resta")
+        print("2-Multiplicación")
+        ask=input()
+        if ask == "1":
+            print("La resta es de", num1-num2)
+        elif ask == "2":
+            print("La multiplicación es de", num1*num2)
+        else:
+            print("Operación no soportada")
+        fin=input("Quieres volver a hacer algo?").lower()=="no"
+        if fin:
+            break
+    except ValueError:
+        print("Ingresa un valor adecuado")
+print("Gracias por usar el programa")
