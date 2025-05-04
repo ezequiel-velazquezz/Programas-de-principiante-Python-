@@ -1,0 +1,29 @@
+# Muestra un encabezado para identificar el sistema
+print("====== Generador de Nombres ======")
+
+# Solicita al usuario que ingrese su nombre
+nombre = input("Ingresa tu nombre: ")
+
+# Solicita al usuario que ingrese su apellido
+apellido = input("Ingresa tu apellido: ")
+
+# Muestra la primera letra del nombre utilizando indexación
+print("La inicial de tu nombre es: " + nombre[0])
+
+# Muestra las últimas tres letras del apellido utilizando slicing negativo
+print("Las última tres letras de tu apellido son: " + apellido[-3:])
+
+# Genera un nombre creativo combinando los primeros 3 caracteres del nombre y los últimos 2 del apellido
+nombre_creativo = nombre[:3] + apellido[-2:]
+
+# Muestra el nombre creativo generado
+print("Tu nombre creativo es: " + nombre_creativo)
+
+# Muestra el nombre con un adjetivo añadido al inicio como ejemplo de concatenación
+print("Tu nombre con un adjetivo adelante es: La poderosa " + nombre)
+
+# Une el nombre y apellido con un espacio para obtener el nombre completo
+nombre_completo = nombre + " " + apellido
+
+# Muestra la longitud total del nombre completo usando la función len()
+print("La longitud de tu nombre completo es de: " + str(len(nombre_completo)) + " caracteres")
